@@ -1,0 +1,122 @@
+---- Minecraft Crash Report ----
+// My bad.
+
+Time: 9/13/21 8:03 PM
+Description: Unexpected error
+
+java.lang.NullPointerException: Unexpected error
+	at com.terrifictable55.yasashii.module.modules.hud.ClickGUI.onEnable(ClickGUI.java:26)
+	at com.terrifictable55.yasashii.module.Module.toggle(Module.java:84)
+	at com.terrifictable55.yasashii.Yasashii.onKeyPress(Yasashii.java:77)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_14_Yasashii_onKeyPress_KeyInputEvent.invoke(.dynamic)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:90)
+	at net.minecraftforge.fml.common.eventhandler.EventBus.post(EventBus.java:182)
+	at net.minecraftforge.fml.common.FMLCommonHandler.fireKeyInput(FMLCommonHandler.java:565)
+	at net.minecraft.client.Minecraft.runTickKeyboard(Minecraft.java:2017)
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1808)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1098)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:398)
+	at net.minecraft.client.main.Main.main(Main.java:118)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraftforge.legacydev.Main.start(Main.java:86)
+	at net.minecraftforge.legacydev.MainClient.main(MainClient.java:29)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Client thread
+Stacktrace:
+	at com.terrifictable55.yasashii.module.modules.hud.ClickGUI.onEnable(ClickGUI.java:26)
+	at com.terrifictable55.yasashii.module.Module.toggle(Module.java:84)
+	at com.terrifictable55.yasashii.Yasashii.onKeyPress(Yasashii.java:77)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_14_Yasashii_onKeyPress_KeyInputEvent.invoke(.dynamic)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:90)
+	at net.minecraftforge.fml.common.eventhandler.EventBus.post(EventBus.java:182)
+	at net.minecraftforge.fml.common.FMLCommonHandler.fireKeyInput(FMLCommonHandler.java:565)
+	at net.minecraft.client.Minecraft.runTickKeyboard(Minecraft.java:2017)
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 1 total; [EntityPlayerSP['Player46'/165, l='MpServer', x=145.50, y=74.00, z=39.85]]
+	Chunk stats: MultiplayerChunkCache: 575, 575
+	Level seed: 0
+	Level generator: ID 00 - default, ver 1. Features enabled: false
+	Level generator options: 
+	Level spawn location: World: (100,64,196), Chunk: (at 4,4,4 in 6,12; contains blocks 96,0,192 to 111,255,207), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+	Level time: 53072 game time, 53072 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: survival (ID 0). Hardcore: false. Cheats: false
+	Forced entities: 40 total; [EntityBat['Bat'/65, l='MpServer', x=121.54, y=37.35, z=18.14], EntityCow['Cow'/70, l='MpServer', x=133.08, y=79.00, z=39.49], EntitySquid['Squid'/71, l='MpServer', x=117.69, y=59.63, z=102.36], EntitySquid['Squid'/73, l='MpServer', x=115.21, y=60.95, z=98.52], EntityPlayerSP['Player46'/165, l='MpServer', x=145.50, y=74.00, z=39.85], EntityCow['Cow'/80, l='MpServer', x=123.04, y=75.00, z=30.51], EntityCow['Cow'/81, l='MpServer', x=132.85, y=79.00, z=34.60], EntityCow['Cow'/82, l='MpServer', x=129.80, y=78.00, z=34.58], EntityCow['Cow'/83, l='MpServer', x=142.20, y=74.00, z=98.51], EntityCow['Cow'/84, l='MpServer', x=141.46, y=72.00, z=102.84], EntityBat['Bat'/1751, l='MpServer', x=104.32, y=34.00, z=106.25], EntityCow['Cow'/88, l='MpServer', x=153.77, y=70.00, z=46.44], EntityCow['Cow'/91, l='MpServer', x=160.17, y=68.00, z=43.50], EntityCow['Cow'/92, l='MpServer', x=188.50, y=90.00, z=1.50], EntityCow['Cow'/93, l='MpServer', x=185.59, y=88.00, z=11.20], EntityBat['Bat'/1757, l='MpServer', x=107.95, y=27.17, z=-34.38], EntityCow['Cow'/94, l='MpServer', x=190.50, y=88.00, z=0.50], EntityCow['Cow'/95, l='MpServer', x=193.50, y=83.00, z=0.50], EntityBat['Bat'/1759, l='MpServer', x=104.56, y=27.83, z=-40.07], EntityCow['Cow'/96, l='MpServer', x=198.81, y=84.00, z=16.45], EntityCow['Cow'/97, l='MpServer', x=200.51, y=83.00, z=17.30], EntityCow['Cow'/98, l='MpServer', x=200.99, y=83.00, z=18.24], EntityCow['Cow'/99, l='MpServer', x=195.50, y=87.00, z=20.18], EntityBat['Bat'/100, l='MpServer', x=200.91, y=23.58, z=110.15], EntityCow['Cow'/103, l='MpServer', x=218.50, y=63.00, z=104.16], EntityBat['Bat'/236, l='MpServer', x=84.24, y=43.48, z=0.79], EntityBat['Bat'/237, l='MpServer', x=79.50, y=33.03, z=-9.51], EntityCow['Cow'/238, l='MpServer', x=86.23, y=64.00, z=-7.50], EntityCow['Cow'/239, l='MpServer', x=80.55, y=69.00, z=-18.55], EntityBat['Bat'/53, l='MpServer', x=73.88, y=17.46, z=1.77], EntityBat['Bat'/247, l='MpServer', x=70.20, y=13.05, z=-1.98], EntityCow['Cow'/55, l='MpServer', x=70.78, y=65.00, z=119.49], EntityCow['Cow'/56, l='MpServer', x=75.53, y=65.00, z=118.84], EntityBat['Bat'/58, l='MpServer', x=88.50, y=34.80, z=96.59], EntityBat['Bat'/59, l='MpServer', x=86.01, y=34.98, z=93.96], EntityCow['Cow'/123, l='MpServer', x=224.53, y=63.00, z=107.75], EntityCow['Cow'/60, l='MpServer', x=88.27, y=64.00, z=105.85], EntityCow['Cow'/124, l='MpServer', x=224.53, y=63.00, z=112.15], EntityCow['Cow'/253, l='MpServer', x=83.15, y=63.00, z=-7.52], EntityCow['Cow'/254, l='MpServer', x=79.43, y=69.00, z=-18.45]]
+	Retry entities: 0 total; []
+	Server brand: fml,forge
+	Server type: Integrated singleplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.addWorldInfoToCrashReport(WorldClient.java:420)
+	at net.minecraft.client.Minecraft.addGraphicsAndWorldToCrashReport(Minecraft.java:2741)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:427)
+	at net.minecraft.client.main.Main.main(Main.java:118)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraftforge.legacydev.Main.start(Main.java:86)
+	at net.minecraftforge.legacydev.MainClient.main(MainClient.java:29)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_292, Amazon.com Inc.
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Amazon.com Inc.
+	Memory: 126682984 bytes (120 MB) / 1175977984 bytes (1121 MB) up to 3804758016 bytes (3628 MB)
+	JVM Flags: 0 total; 
+	IntCache: cache: 0, tcache: 7, allocated: 20, tallocated: 86
+	FML: MCP 9.42 Powered by Forge 14.23.5.2854 5 mods loaded, 5 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+
+	| State  | ID        | Version      | Source                                                             | Signature |
+	|:------ |:--------- |:------------ |:------------------------------------------------------------------ |:--------- |
+	| LCHIJA | minecraft | 1.12.2       | minecraft.jar                                                      | None      |
+	| LCHIJA | mcp       | 9.42         | minecraft.jar                                                      | None      |
+	| LCHIJA | FML       | 8.0.99.99    | forge-1.12.2-14.23.5.2854_mapped_snapshot_20171003-1.12-recomp.jar | None      |
+	| LCHIJA | forge     | 14.23.5.2854 | forge-1.12.2-14.23.5.2854_mapped_snapshot_20171003-1.12-recomp.jar | None      |
+	| LCHIJA | yc        | 1.0.3        | main                                                               | None      |
+
+	Loaded coremods (and transformers): 
+	GL info: ' Vendor: 'ATI Technologies Inc.' Version: '4.6.14739 Compatibility Profile Context 21.6.2 27.20.22001.16006' Renderer: 'Radeon RX Vega'
+	Launched Version: ${MC_VERSION}
+	LWJGL: 2.9.4
+	OpenGL: Radeon RX Vega GL version 4.6.14739 Compatibility Profile Context 21.6.2 27.20.22001.16006, ATI Technologies Inc.
+	GL Caps: Using GL 1.3 multitexturing.
+Using GL 1.3 texture combiners.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Shaders are available because OpenGL 2.1 is supported.
+VBOs are available because OpenGL 1.5 is supported.
+
+	Using VBOs: Yes
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: 
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)
+	CPU: 12x AMD Ryzen 5 2600 Six-Core Processor 

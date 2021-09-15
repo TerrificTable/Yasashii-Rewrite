@@ -1,0 +1,41 @@
+{
+  "minecraft:recipes/building_blocks/oak_planks": {
+    "criteria": {
+      "has_log": "2021-05-21 10:39:51 +0200"
+    },
+    "done": true
+  },
+  "minecraft:story/lava_bucket": {
+    "criteria": {
+      "lava_bucket": "2021-05-21 10:39:51 +0200"
+    },
+    "done": true
+  },
+  "minecraft:adventure/root": {
+    "criteria": {
+      "killed_something": "2021-05-21 21:21:57 +0200"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/paper": {
+    "criteria": {
+      "has_reeds": "2021-05-19 18:27:14 +0200"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/sugar": {
+    "criteria": {
+      "has_reeds": "2021-05-19 18:27:14 +0200"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "forest": "2021-05-19 18:27:14 +0200",
+      "birch_forest": "2021-05-21 10:39:51 +0200",
+      "plains": "2021-05-21 21:19:37 +0200",
+      "birch_forest_hills": "2021-05-21 14:34:38 +0200"
+    },
+    "done": false
+  }
+}

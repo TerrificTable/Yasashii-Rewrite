@@ -1,0 +1,25 @@
+range:7.0:BedAura
+placedelay:15.0:BedAura
+CARange:5.0:CrystalAura
+CADelay:2.0:CrystalAura
+FpsX:2.0:FPS
+FpsY:350.0:FPS
+MemoryX:2.0:Menory
+MemoryY:350.0:Menory
+MemoryX:2.0:Ping
+MemoryY:350.0:Ping
+MemoryX:2.0:Welcomer
+MemoryY:350.0:Welcomer
+y:0.0:vclip
+h:0.0:Velocity
+v:0.0:Velocity
+h:15.0:Auto Log
+:204.0:EntityESP
+:204.0:EntityESP
+:204.0:EntityESP
+:204.0:EntityESP
+range:7.0:HoleESP
+r:255.0:HoleESP
+g:255.0:HoleESP
+b:255.0:HoleESP
+a:255.0:HoleESP

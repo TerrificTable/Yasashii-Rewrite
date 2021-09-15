@@ -1,0 +1,36 @@
+ChatPrefix:NONE
+ChatSuffix:NONE
+Spammer:NONE
+TotemPopCounter:NONE
+AutoArmor:NONE
+Auto Totem:NONE
+BedAura:NONE
+BowSpam:NONE
+CrystalAura:NONE
+ArmorHud:NONE
+ArrayList:NONE
+ClickGUI:RSHIFT
+FPS:NONE
+Menory:NONE
+Ping:NONE
+Watermark:NONE
+Welcomer:NONE
+SeK0:NONE
+DiscordRPC:NONE
+EntityAlert:NONE
+PortalGodMode:NONE
+WeaknessAlert:NONE
+HoleTP:NONE
+Sonic:NONE
+Sprint:NONE
+Timer:NONE
+vclip:NONE
+Velocity:NONE
+Auto Log:NONE
+FakePlayer:NONE
+BlockVision:NONE
+ChunkOverlay:NONE
+CustomCape:NONE
+EntityESP:NONE
+Fullbright:NONE
+HoleESP:NONE

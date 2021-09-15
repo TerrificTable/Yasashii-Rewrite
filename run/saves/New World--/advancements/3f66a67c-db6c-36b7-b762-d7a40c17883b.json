@@ -1,0 +1,21 @@
+{
+  "minecraft:recipes/misc/paper": {
+    "criteria": {
+      "has_reeds": "2021-05-19 18:38:42 +0200"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/sugar": {
+    "criteria": {
+      "has_reeds": "2021-05-19 18:38:42 +0200"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "forest": "2021-05-19 18:38:42 +0200",
+      "forest_hills": "2021-05-20 16:54:28 +0200"
+    },
+    "done": false
+  }
+}

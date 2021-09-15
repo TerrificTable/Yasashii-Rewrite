@@ -1,0 +1,6 @@
+greentext:false:TotemPopCounter
+count:false:Auto Totem
+announceUsage:true:BedAura
+placeesp:true:BedAura
+CAPlace:true:CrystalAura
+jump:true:Sonic

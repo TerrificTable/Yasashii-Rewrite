@@ -1,0 +1,17 @@
+
+pluginManagement {
+	repositories {
+		jcenter()
+		maven {
+			name = 'Fabric'
+			url = 'https://maven.fabricmc.net/'
+		}
+		gradlePluginPortal()
+	}
+}
+
+include "panelstudio"
+include "panelstudio-mc12"
+include "panelstudio-mc16"
+include "panelstudio-mc8-fabric"
+include "panelstudio-mc8-forge"
