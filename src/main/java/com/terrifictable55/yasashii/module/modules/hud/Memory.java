@@ -35,8 +35,9 @@ public class Memory extends Module {
             long usedMemory = Runtime.getRuntime().freeMemory();
             long totalMemory = Runtime.getRuntime().totalMemory();
             double usedmemory = usedMemory / M;
+            double totalmemory = totalMemory/M;
             if (event.getType() == RenderGameOverlayEvent.ElementType.ALL) {
-                mc.fontRenderer.drawStringWithShadow(usedmemory + "/" + totalMemory
+                mc.fontRenderer.drawStringWithShadow(usedmemory + "/" + totalmemory
                         , xf
                         , yf
                         , ColourUtils.genRainbow());

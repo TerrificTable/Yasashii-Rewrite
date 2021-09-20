@@ -13,7 +13,7 @@ public class ChatSuffix extends Module {
 
     @SubscribeEvent
     public void onChat(ClientChatEvent event) {
-        String suffix = "  <<Yasashii>> ";
+        String suffix = " -> [Yasashii] ";
         if (event.getMessage().startsWith("/")) return;
         if (event.getMessage().startsWith(Yasashii.prefix)) return;
         event.setMessage(event.getMessage() + suffix);

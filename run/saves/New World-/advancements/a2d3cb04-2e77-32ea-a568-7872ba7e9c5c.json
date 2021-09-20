@@ -1,4 +1,10 @@
 {
+  "minecraft:recipes/tools/flint_and_steel": {
+    "criteria": {
+      "has_obsidian": "2021-09-15 19:02:02 +0200"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/item_frame": {
     "criteria": {
       "has_leather": "2021-05-25 20:34:49 +0200"
@@ -23,6 +29,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/chest": {
+    "criteria": {
+      "has_lots_of_items": "2021-09-15 19:02:04 +0200"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/paper": {
     "criteria": {
       "has_reeds": "2021-05-25 20:34:49 +0200"
@@ -35,9 +47,27 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/enchanting_table": {
+    "criteria": {
+      "has_obsidian": "2021-09-15 19:02:02 +0200"
+    },
+    "done": true
+  },
   "minecraft:recipes/transportation/acacia_boat": {
     "criteria": {
       "entered_water": "2021-05-19 08:59:53 +0200"
+    },
+    "done": true
+  },
+  "minecraft:adventure/totem_of_undying": {
+    "criteria": {
+      "used_totem": "2021-09-15 18:58:36 +0200"
+    },
+    "done": true
+  },
+  "minecraft:adventure/root": {
+    "criteria": {
+      "killed_by_something": "2021-09-15 19:04:09 +0200"
     },
     "done": true
   },
@@ -59,6 +89,12 @@
     },
     "done": true
   },
+  "minecraft:story/form_obsidian": {
+    "criteria": {
+      "obsidian": "2021-09-15 19:02:02 +0200"
+    },
+    "done": true
+  },
   "minecraft:recipes/transportation/spruce_boat": {
     "criteria": {
       "entered_water": "2021-05-19 08:59:53 +0200"
@@ -73,7 +109,10 @@
   },
   "minecraft:adventure/adventuring_time": {
     "criteria": {
-      "plains": "2021-05-19 08:59:42 +0200"
+      "swampland": "2021-09-15 19:04:21 +0200",
+      "forest_hills": "2021-09-15 18:56:37 +0200",
+      "plains": "2021-05-19 08:59:42 +0200",
+      "river": "2021-09-15 18:57:31 +0200"
     },
     "done": false
   },
