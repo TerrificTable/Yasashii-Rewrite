@@ -1,0 +1,7 @@
+null:Mainhand:CrystalAura
+null:Outline:CrystalAura
+null:Packet:AntiHurt
+null:Dynamic:Shulkerspy
+null:Outline:HoleEsp
+null:H:NameTags
+null:Number:NameTags

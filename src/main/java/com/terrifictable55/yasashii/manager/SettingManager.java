@@ -1,6 +1,8 @@
 package com.terrifictable55.yasashii.manager;
 
+import com.terrifictable55.yasashii.Yasashii;
 import com.terrifictable55.yasashii.module.Module;
+import com.terrifictable55.yasashii.util.Refrence;
 
 import java.util.ArrayList;
 
@@ -46,6 +48,15 @@ public class SettingManager {
             }
         }
         System.err.println("[Yasashii] Error Setting NOT found: '" + id +"'!");
+        return null;
+    }
+    public Setting getSettingByName(String name) {
+        for (Setting set : getSettings()) {
+            if (set.getName().equalsIgnoreCase(name)) {
+                return set;
+            }
+        }
+        System.err.println("[" + Refrence.NAME + "] Error Setting NOT found: '" + name + "'!");
         return null;
     }
 }

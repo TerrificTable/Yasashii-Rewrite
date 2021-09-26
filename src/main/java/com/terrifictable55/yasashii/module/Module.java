@@ -2,11 +2,14 @@ package com.terrifictable55.yasashii.module;
 
 import com.terrifictable55.yasashii.Yasashii;
 import com.terrifictable55.yasashii.manager.Setting;
+import com.terrifictable55.yasashii.utils.Connection;
 import net.minecraft.client.Minecraft;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.gameevent.TickEvent;
 import org.lwjgl.input.Keyboard;
+
+import java.util.ArrayList;
 
 public class Module {
     protected Minecraft mc = Minecraft.getMinecraft();
@@ -28,6 +31,7 @@ public class Module {
         setup();
     }
 
+
     public void registerSettings() {
         selfSettings();
     }
@@ -38,6 +42,14 @@ public class Module {
 
     public void onDisable() {
         MinecraftForge.EVENT_BUS.unregister(this);
+    }
+
+    public boolean onPacket(Object packet, Connection.Side side) {
+        return true;
+    }
+
+    public boolean onDisablePacket(Object packet, Connection.Side side) {
+        return true;
     }
 
     @SubscribeEvent
@@ -53,8 +65,9 @@ public class Module {
     public void selfSettings() {
     }
 
-    public void rSetting(Setting setting) {
+    public Setting rSetting(Setting setting) {
         Yasashii.settingManager.rSetting(setting);
+        return setting;
     }
 
     public void onToggle() {
@@ -68,6 +81,20 @@ public class Module {
         } else {
             onDisable();
         }
+    }
+
+    public ArrayList<String> BlockEspOptions() {
+        ArrayList<String> BlockOptions = new ArrayList<>();
+        BlockOptions.add("Outline");
+        BlockOptions.add("Full");
+        BlockOptions.add("Flat");
+        BlockOptions.add("FlatOutline");
+        BlockOptions.add("Beacon");
+        BlockOptions.add("Xspot");
+        BlockOptions.add("Tracer");
+        BlockOptions.add("Shape");
+        BlockOptions.add("None");
+        return BlockOptions;
     }
 
     public Integer getKey() {

@@ -20,6 +20,7 @@
   },
   "minecraft:adventure/adventuring_time": {
     "criteria": {
+      "forest_hills": "2021-09-26 08:50:12 +0200",
       "plains": "2021-07-08 19:43:17 +0200",
       "extreme_hills": "2021-07-08 19:42:31 +0200"
     },

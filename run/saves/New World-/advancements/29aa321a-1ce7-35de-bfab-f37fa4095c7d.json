@@ -1,19 +1,25 @@
 {
-  "minecraft:recipes/combat/arrow": {
+  "minecraft:recipes/tools/flint_and_steel": {
     "criteria": {
-      "has_feather": "2021-07-06 20:39:00 +0200"
+      "has_obsidian": "2021-09-26 12:32:24 +0200"
     },
     "done": true
   },
-  "minecraft:adventure/root": {
+  "minecraft:recipes/transportation/dark_oak_boat": {
     "criteria": {
-      "killed_something": "2021-07-06 20:39:13 +0200"
+      "entered_water": "2021-09-26 12:34:26 +0200"
     },
     "done": true
   },
   "minecraft:recipes/decorations/chest": {
     "criteria": {
       "has_lots_of_items": "2021-09-12 21:20:03 +0200"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/birch_boat": {
+    "criteria": {
+      "entered_water": "2021-09-26 12:34:26 +0200"
     },
     "done": true
   },
@@ -29,10 +35,62 @@
     },
     "done": false
   },
+  "minecraft:recipes/decorations/enchanting_table": {
+    "criteria": {
+      "has_obsidian": "2021-09-26 12:32:24 +0200"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/acacia_boat": {
+    "criteria": {
+      "entered_water": "2021-09-26 12:34:26 +0200"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/arrow": {
+    "criteria": {
+      "has_feather": "2021-07-06 20:39:00 +0200"
+    },
+    "done": true
+  },
+  "minecraft:adventure/root": {
+    "criteria": {
+      "killed_something": "2021-07-06 20:39:13 +0200"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/boat": {
+    "criteria": {
+      "entered_water": "2021-09-26 12:34:26 +0200"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/jungle_boat": {
+    "criteria": {
+      "entered_water": "2021-09-26 12:34:26 +0200"
+    },
+    "done": true
+  },
+  "minecraft:story/form_obsidian": {
+    "criteria": {
+      "obsidian": "2021-09-26 12:32:24 +0200"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/spruce_boat": {
+    "criteria": {
+      "entered_water": "2021-09-26 12:34:26 +0200"
+    },
+    "done": true
+  },
   "minecraft:adventure/adventuring_time": {
     "criteria": {
+      "forest": "2021-09-26 12:36:47 +0200",
+      "swampland": "2021-09-26 12:32:24 +0200",
       "forest_hills": "2021-09-12 21:20:03 +0200",
-      "extreme_hills": "2021-07-06 20:39:00 +0200"
+      "plains": "2021-09-26 12:36:40 +0200",
+      "extreme_hills": "2021-07-06 20:39:00 +0200",
+      "river": "2021-09-26 12:34:28 +0200"
     },
     "done": false
   }

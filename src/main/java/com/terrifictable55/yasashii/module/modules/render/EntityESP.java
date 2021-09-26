@@ -29,6 +29,5 @@ public class EntityESP extends Module {
         float bf = (float) b.getValDouble();
         float af = (float) a.getValDouble();
         AxisAlignedBB bb = mc.player.getRenderBoundingBox();
-        RenderUtil.drawBoundingBox(bb, 15f, rf, gf, bf, af);
     }
 }

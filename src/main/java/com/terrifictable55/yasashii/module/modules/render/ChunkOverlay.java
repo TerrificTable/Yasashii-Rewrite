@@ -13,6 +13,5 @@ public class ChunkOverlay extends Module {
     }
     @EventHandler
     Listener<RenderWorldEvent> event = new Listener<RenderWorldEvent>(e -> {
-        RenderUtil.drawRect(10, 10, 10, 10, -1);
     });
 }

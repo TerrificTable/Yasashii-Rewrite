@@ -14,6 +14,16 @@ public class Bind extends Command {
     }
 
     @Override
+    public String getDescription() {
+        return null;
+    }
+
+    @Override
+    public String getSyntax() {
+        return "Bind <Module> <Bind>";
+    }
+
+    @Override
     public void onCommand(String[] args) {
         if (args.length > 2) {
             try {

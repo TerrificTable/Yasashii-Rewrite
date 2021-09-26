@@ -11,6 +11,16 @@ public class Prefix extends Command {
     }
 
     @Override
+    public String getDescription() {
+        return null;
+    }
+
+    @Override
+    public String getSyntax() {
+        return "prefix <prefix>";
+    }
+
+    @Override
     public void onCommand(String[] args) {
         if (args.length > 1) {
             try {

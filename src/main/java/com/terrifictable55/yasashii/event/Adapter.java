@@ -25,7 +25,6 @@ public class Adapter {
     public void onRender(RenderWorldLastEvent event) {
         if (event.isCanceled())
             return;
-        RenderUtil.drawBoundingBox(mc.player.getEntityBoundingBox(), 1, 0xFF, 0xFF, 0xFF, 0xFF);
         Yasashii.EVENT_BUS.post(new RenderWorldEvent());
     }
 

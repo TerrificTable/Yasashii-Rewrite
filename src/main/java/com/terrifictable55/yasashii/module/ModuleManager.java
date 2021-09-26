@@ -11,6 +11,7 @@ import com.terrifictable55.yasashii.module.modules.misc.*;
 import com.terrifictable55.yasashii.module.modules.movement.*;
 import com.terrifictable55.yasashii.module.modules.player.AutoLog;
 import com.terrifictable55.yasashii.module.modules.player.FakePlayer;
+import com.terrifictable55.yasashii.module.modules.player.NoEffect;
 import com.terrifictable55.yasashii.module.modules.render.*;
 
 import java.util.ArrayList;
@@ -18,60 +19,74 @@ import java.util.List;
 
 public class ModuleManager {
 
-    public ArrayList<Module> modules;
+    public static ArrayList<Module> modules = new ArrayList<>();
+    public static ArrayList<Module> toggledModules = new ArrayList<>();
 
     public ModuleManager() {
         (modules = new ArrayList<Module>()).clear();
         //Chat
-        this.modules.add(new ChatPrefix());
-        this.modules.add(new ChatSuffix());
-        this.modules.add(new Scarfchat());
-        this.modules.add(new TotemPopAnnouncer());
+        modules.add(new ChatPrefix());
+        modules.add(new ChatSuffix());
+        modules.add(new Scarfchat());
+        //modules.add(new TotemPopAnnouncer());
 
         //Combat
-        this.modules.add(new AutoArmor());
-        this.modules.add(new AutoTotem());
-        this.modules.add(new BedAura());
-        this.modules.add(new BowSpam());
-        this.modules.add(new CrystalAura());
+        modules.add(new AntiBot());
+        modules.add(new AutoArmor());
+        modules.add(new AutoTotem());
+        modules.add(new BedAura());
+        modules.add(new BowSpam());
+        modules.add(new CrystalAura());
+        modules.add(new TotemPop());
 
         //Hud
-        this.modules.add(new ArmorHud());
-        this.modules.add(new com.terrifictable55.yasashii.module.modules.hud.ArrayList());
-        this.modules.add(new ClickGUI());
-        this.modules.add(new FPS());
-        this.modules.add(new Memory());
-        this.modules.add(new Ping());
-        this.modules.add(new Watermark());
-        this.modules.add(new Welcomer());
+        modules.add(new ArmorHud());
+        modules.add(new com.terrifictable55.yasashii.module.modules.hud.ArrayList());
+        modules.add(new ClickGUI());
+        modules.add(new FPS());
+        modules.add(new Memory());
+        modules.add(new Ping());
+        modules.add(new Watermark());
+        modules.add(new Welcomer());
 
         //Misc
-        this.modules.add(new AutoSuicide());
-        this.modules.add(new DiscordRPC());
-        this.modules.add(new EntityAlert());
-        this.modules.add(new PortalGodMode());
-        this.modules.add(new WeaknessAlert());
+        modules.add(new AntiCheat());
+        modules.add(new AntiCheat());
+        modules.add(new AntiHurt());
+        modules.add(new AutoSuicide());
+        modules.add(new CoordsFinder());
+        modules.add(new DiscordRPC());
+        modules.add(new EntityAlert());
+        modules.add(new GuiPeek());
+        modules.add(new ModSettings());
+        modules.add(new PluginGetter());
+        modules.add(new PortalGodMode());
+        modules.add(new ShulkerSpy());
+        modules.add(new WeaknessAlert());
 
         //Movement
-        this.modules.add(new HoleTP());
-        this.modules.add(new Sonic());
-        this.modules.add(new Sprint());
-        this.modules.add(new Timer());
-        this.modules.add(new VClip());
-        this.modules.add(new Velocity());
+        modules.add(new HoleTP());
+        modules.add(new Sonic());
+        modules.add(new Sprint());
+        modules.add(new Timer());
+        modules.add(new VClip());
+        modules.add(new Velocity());
 
         //Player
-        this.modules.add(new AutoLog());
-        this.modules.add(new FakePlayer());
+        modules.add(new AutoLog());
+        modules.add(new FakePlayer());
+        modules.add(new NoEffect());
 
         //Render
-        this.modules.add(new BlockVision());
-        this.modules.add(new ChunkOverlay());
+        modules.add(new BlockOverlay());
+        modules.add(new BlockVision());
+        modules.add(new ChunkOverlay());
         // this.modules.add(new CustomCape());
         // this.modules.add(new EntityESP());
-        this.modules.add(new Fullbright());
-        this.modules.add(new HoleESP());
+        modules.add(new Fullbright());
+        modules.add(new HoleESP());
         // this.modules.add(new ItemESP());
+        modules.add(new NameTags());
 
     }
 
@@ -79,7 +94,11 @@ public class ModuleManager {
         return modules;
     }
 
-    public Module getModuleByName(String name) {
+    public static ArrayList<Module> getEnabledmodules() {
+        return toggledModules;
+    }
+
+    public static Module getModuleByName(String name) {
         return modules.stream().filter(module -> module.getName().equalsIgnoreCase(name)).findFirst().orElse(null);
     }
     public static List<Module> getModulesByCategory(Category c){

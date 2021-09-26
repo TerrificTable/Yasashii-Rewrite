@@ -12,6 +12,16 @@ public class Toggle extends Command {
     }
 
     @Override
+    public String getDescription() {
+        return null;
+    }
+
+    @Override
+    public String getSyntax() {
+        return "toggle <Module>";
+    }
+
+    @Override
     public void onCommand(String[] args) {
         if (args.length > 1) {
             try {

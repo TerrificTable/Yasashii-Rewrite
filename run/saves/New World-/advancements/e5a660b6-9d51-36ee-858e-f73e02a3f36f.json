@@ -11,6 +11,12 @@
     },
     "done": true
   },
+  "minecraft:adventure/root": {
+    "criteria": {
+      "killed_by_something": "2021-09-26 08:55:03 +0200"
+    },
+    "done": true
+  },
   "minecraft:recipes/combat/leather_boots": {
     "criteria": {
       "has_leather": "2021-05-25 20:20:33 +0200"
@@ -43,6 +49,8 @@
   },
   "minecraft:adventure/adventuring_time": {
     "criteria": {
+      "swampland": "2021-09-26 08:54:27 +0200",
+      "forest_hills": "2021-09-26 08:54:05 +0200",
       "plains": "2021-05-25 20:20:33 +0200"
     },
     "done": false

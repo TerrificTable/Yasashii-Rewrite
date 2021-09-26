@@ -1,8 +1,13 @@
 package com.terrifictable55.yasashii.command;
 
-public class Command {
+import net.minecraft.client.Minecraft;
+
+public abstract class Command {
+    protected static Minecraft mc = Minecraft.getMinecraft();
     private final String command;
     private final String[] usage;
+    public abstract String getDescription();
+    public abstract String getSyntax();
 
     public Command(String name, String[] usage) {
         this.command = name;
@@ -21,5 +26,9 @@ public class Command {
 
     public String[] getUsage() {
         return usage;
+    }
+
+    public void runCommand(String s, String[] args) {
+
     }
 }
